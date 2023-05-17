@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 퀘스트 : 이미지 4개 만들기 (2개 외부, 2개 내부 링크 사용), 표를 가지고 inner 사각형 작성하기 
+    좌측정렬(문자,이미지),문자 줄바꿈 구현-->
+    <h3>CSS can be used to create an image gellery</h3> 
+    <table border = "1">
+    <tr>  
+
+        <td> <!--scr: 나올 그림 , alt : 참조글 , width: 너비 , height : 높이-->
+              <img src= "https://placeimg.com//640/480/animals" alt="My Images1" width="100%" height="100%">
+              <p><div>Add a description of the image here</div></p> <!--바로 div를 사용하면 줄바꿈이 안되서 P태그로 문장을 작성하고 div사용함-->
+        </td><!--그림1 외부에서 가져오기 -->
+    
+        <td>
+            <img src="https://placeimg.com/640/480/animals" alt="My Images2" width="100%" height="100%">
+            <p><div>Add a description of the image here</div></p>
+        </td> <!--그림2 외부에서 가져오기 -->
+    </tr>
+
+    <tr>    
+        <td>
+            <img src="../images/animals.jpg" alt="My Images3" width="100%" height="100%">
+            <p><div>Add a description of the image here</div></p>
+        </td><!--그림3 내부에서 가져오기 -->      
+
+        <td> 
+            <img src="../images/animals2.jpg" alt="My Images4" width="100%" height="100%">
+            <p><div>Add a description of the image here</div></p>
+        </td>  <!--그림4 내부에서 가져오기 -->  
+    </tr>
+  
+   </table>
+    
+
+
+</body>
+</html>

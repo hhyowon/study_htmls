@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Forms</title>
+</head>
+<body>
+    <div>Forms</div>
+    <div> <!---->
+        <form action="index.html" >
+            <div><!--input (radio) 초기값 설정 checked-->
+                <input type="radio" name="fruits" value="apple" id="">사과
+                <input type="radio" name="fruits" value="banana" id="">바나나
+                <input type="radio" name="fruits" value="strawberry" checked id="">딸기
+            </div>
+
+            <div><!--select 초기값 설정 selected-->
+                <label for="cars">choose a car:</label>
+
+                <select name ="cars" id="cars">
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab" selected>Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+
+            <div><!--multiple 여러개 같이 선택하기-->
+                <label for="cars">choose a car(multiple):</label>
+
+                <select name ="cars" id="cars" multiple>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab" selected>Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+
+            <div>
+                <button type ="submit">Click Me!</button>
+            </div>
+            <hr>
+            <div>
+                First Name : <input type="text" name="first">
+            </div>
+   
+            <div>
+                <div>
+                     Contents : 
+                </div>
+                <textarea name="mycontents" id="" cols="30" rows="10">입력하는 곳입니다.</textarea>
+            </div>
+        </form>
+
+        <form action="index.html">
+            <div>
+                <input type="submit">
+                <button type ="submit">Click Me!</button>
+                <button type ="reset">원래대로되돌리기</button>
+            </div>
+
+            <div>
+                Check First : <input type="checkbox" name="mycheckfirst" value ="checked" checked>
+                Check Second : <input type="checkbox" name="mychecksecond">
+                <label for="idcheckthird">Label Check Third : </label>
+                <input type="checkbox" name="mycheckthird" id ="idcheckthird">
+            </div>
+            <div>
+                Hidden First : <input type="hidden" name="myhiddenfirst" value="2">
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </div> 
+    <hr>
+    <div> <!--태그연습 폼-->
+        <form action="index.html">
+            <div>
+                E-mail : <input type="email" name="myemail" value="hyowon0605@gmail.com">
+            </div>
+            <div>
+                password : <input type="password" name="mypassword">
+            </div>
+            <div>
+                Date : <input type="date" name="mydate" value ="2023-05-16">
+            </div>
+            <div>
+                FILE: <input type="file" name="myfile">
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+    <hr>  <!--검색폼-->
+    <form action="links.html">
+        <div>
+             <form action="main.html">
+            검색 : <input type="text" name="search">
+            <input type="submit">
+        </form>
+    </div>
+    <hr>  
+    <div> <!--이름입력폼-->
+        <form action="index.html">
+        </form>
+            <div>
+                First Name : <input type="text" name="first">
+            </div>
+            <div>
+                Second Name : <input type="text" name="second">
+            </div>
+            <hr>
+            <input type="submit">
+        </form>
+    </div>
+
+   
+</body>
+</html>
